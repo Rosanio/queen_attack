@@ -27,4 +27,16 @@ public class AppTest {
     targetLocation.add(3);
     assertEquals(true, queenAttack.queenCanAttack(queenLocation, targetLocation));
   }
+
+  @Test
+  public void queenCanAttack_isTrueIftheQueenCanAttackHorizontally_true() {
+    App queenAttack = new App();
+    ArrayList<Object> queenLocation = new ArrayList<Object>();
+    queenLocation.add(1);
+    queenLocation.add(1);
+    ArrayList<Object> targetLocation = new ArrayList<Object>();
+    targetLocation.add(4);
+    targetLocation.add(1);
+    assertEquals(true, queenAttack.queenCanAttack(queenLocation, targetLocation));
+  }
 }

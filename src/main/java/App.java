@@ -12,6 +12,8 @@ public class App {
   public static Boolean queenCanAttack(ArrayList queenLocation, ArrayList targetLocation) {
     if(queenLocation.get(0) == targetLocation.get(0)) {
       return true;
+    } else if (queenLocation.get(1) == targetLocation.get(1)) {
+      return true;
     }
     return false;
   }
